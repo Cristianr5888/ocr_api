@@ -11,9 +11,25 @@ function App() {
       </div>
       <h1>OCR API</h1>
       <div className="card">
-        <button type="submit">Subir imagen</button>
+        <label htmlFor="fileInput" className="custom-button">
+          Subir imagen
+        </label>
+        <input
+          id="fileInput"
+          type="file"
+          style={{ display: "none" }}
+          onChange={(e) => {
+            const file = e.target.files[0];
+            if (file) {
+              console.log("Archivo seleccionado:", file.name);
+            }
+          }}
+        />
       </div>
-      <p className="read-the-docs">Sube tu imagen</p>
+
+      <p className="read-the-docs">
+        Cristian Jimenez - Osmar Guerra - Santiago Santillan
+      </p>
     </>
   );
 }

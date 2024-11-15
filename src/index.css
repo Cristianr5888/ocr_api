@@ -66,3 +66,19 @@ button:focus-visible {
     background-color: #eddcdc;
   }
 }
+
+.custom-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #3290f4;
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  border: none;
+}
+
+.custom-button:hover {
+  background-color: #166dca;
+}
